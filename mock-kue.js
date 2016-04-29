@@ -11,7 +11,9 @@ kue.Job.prototype.save = function(fn){
 	this.id = mockJobs.length;
 	mockJobs.push(this);
 	if(fn){
-		fn();
+		setTimeout(function() {
+			fn();
+		});
 	}
 	return this;
 }
