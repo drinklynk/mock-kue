@@ -13,7 +13,7 @@ kue.Job.prototype.save = function(fn){
 	if(fn){
 		setTimeout(function() {
 			fn();
-		});
+		}, 10);
 	}
 	return this;
 }
